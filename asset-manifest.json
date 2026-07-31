@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/aman-portfolio/static/css/main.94fc055c.css",
-    "main.js": "/aman-portfolio/static/js/main.d3e1115d.js",
+    "main.js": "/aman-portfolio/static/js/main.d5a377a6.js",
     "static/media/coc.png": "/aman-portfolio/static/media/coc.3d6fdbe4e2a304aa31f0.png",
     "static/media/bbms.png": "/aman-portfolio/static/media/bbms.65526039391182c70e32.png",
+    "static/media/exptrack.png": "/aman-portfolio/static/media/exptrack.3a82af45201675ef952f.png",
     "static/media/dic_patiala.png": "/aman-portfolio/static/media/dic_patiala.5302e0073fb3ebe70422.png",
     "static/media/IMG_20260320_135033.jpg": "/aman-portfolio/static/media/IMG_20260320_135033.d0c1cf902ff2bccd8dfc.jpg",
     "static/media/thapar-university.jpg": "/aman-portfolio/static/media/thapar-university.bd0f8fcbfb2ffa8684c1.jpg",
@@ -13,10 +14,10 @@
     "static/media/rpsphoto.jpg": "/aman-portfolio/static/media/rpsphoto.d5da38102accdc1a500d.jpg",
     "index.html": "/aman-portfolio/index.html",
     "main.94fc055c.css.map": "/aman-portfolio/static/css/main.94fc055c.css.map",
-    "main.d3e1115d.js.map": "/aman-portfolio/static/js/main.d3e1115d.js.map"
+    "main.d5a377a6.js.map": "/aman-portfolio/static/js/main.d5a377a6.js.map"
   },
   "entrypoints": [
     "static/css/main.94fc055c.css",
-    "static/js/main.d3e1115d.js"
+    "static/js/main.d5a377a6.js"
   ]
 }
