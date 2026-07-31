@@ -20,13 +20,16 @@ const Card = styled.div`
     filter: brightness(1.1);
   }
 `;
+
 const Image = styled.img`
   width: 100%;
   height: 180px;
   background-color: ${({ theme }) => theme.white};
   border-radius: 10px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 `;
+
 const Tags = styled.div`
   width: 100%;
   display: flex;
@@ -35,6 +38,16 @@ const Tags = styled.div`
   gap: 8px;
   margin-top: 4px;
 `;
+
+const Tag = styled.span`
+  font-size: 12px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.primary + 15};
+  padding: 2px 8px;
+  border-radius: 10px;
+`;
+
 const Details = styled.div`
   width: 100%;
   display: flex;
@@ -42,6 +55,7 @@ const Details = styled.div`
   gap: 0px;
   padding: 0px 2px;
 `;
+
 const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
@@ -51,9 +65,9 @@ const Title = styled.div`
   max-width: 100%;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  overflow: hidden;
   text-overflow: ellipsis;
 `;
+
 const Date = styled.div`
   font-size: 12px;
   margin-left: 2px;
@@ -63,6 +77,7 @@ const Date = styled.div`
     font-size: 10px;
   }
 `;
+
 const Description = styled.div`
   font-weight: 400;
   color: ${({ theme }) => theme.text_secondary + 99};
@@ -74,11 +89,13 @@ const Description = styled.div`
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 `;
+
 const Members = styled.div`
   display: flex;
   align-items: center;
   padding-left: 10px;
 `;
+
 const Avatar = styled.img`
   width: 38px;
   height: 38px;
@@ -88,31 +105,61 @@ const Avatar = styled.img`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid ${({ theme }) => theme.card};
 `;
+
+const ButtonGroup = styled.div`
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: auto;
+`;
+
 const Button = styled.a`
-  color: ${({ theme }) => theme.primary};
+  flex: 1;
+  color: ${({ theme, primary }) => (primary ? theme.white : theme.primary)};
+  background-color: ${({ theme, primary }) => (primary ? theme.primary : "transparent")};
+  border: 1.5px solid ${({ theme }) => theme.primary};
   text-decoration: none;
   font-weight: 600;
+  font-size: 13px;
   text-align: center;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  &:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+  }
 `;
 
 const ProjectCard = ({ project }) => {
   return (
     <Card>
-      <Image src={project.image} />
-      <Tags></Tags>
+      <Image src={project.image} alt={project.title} />
+      <Tags>
+        {project.tags?.map((tag, index) => (
+          <Tag key={index}>{tag}</Tag>
+        ))}
+      </Tags>
       <Details>
         <Title>{project.title}</Title>
         <Date>{project.date}</Date>
         <Description>{project.description}</Description>
       </Details>
       <Members>
-        {project.member?.map((member) => (
-          <Avatar src={member.img} />
+        {project.member?.map((member, index) => (
+          <Avatar key={index} src={member.img} />
         ))}
       </Members>
-      <Button href={project.github} target="_blank">
-        View Code
-      </Button>
+      <ButtonGroup>
+        <Button href={project.github} target="_blank" rel="noopener noreferrer">
+          View Code
+        </Button>
+        {project.webapp && (
+          <Button href={project.webapp} target="_blank" rel="noopener noreferrer" primary="true">
+            Live App
+          </Button>
+        )}
+      </ButtonGroup>
     </Card>
   );
 };

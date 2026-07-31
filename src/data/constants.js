@@ -1,11 +1,12 @@
 import thaparLogo from '../images/thapar-university.jpg';
 import rpsLogo from '../images/rpsphoto.jpg';
 import mpsLogo from '../images/mps school.jpg';
-import zycusLogo from '../images/Zycus.webp';
 import carrerLogo from '../images/carrer360.jpg';
 import musicLogo from '../images/MusicP.png';
 import cocLogo from '../images/coc.png';
 import bbmsLogo from '../images/bbms.png';
+import thaparfindLogo from '../images/thaparfind.png';
+import dicLogo from '../images/dic_patiala.png';
 
 export const Bio = {
   name: "Aman Yadav",
@@ -161,12 +162,12 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: zycusLogo,
-    role: "Intern",
-    company: "Zycus",
-    date: "Jun 2025 - Jul 2025",
-    desc: "• Developed 5+ responsive web pages using React, improving performance by 20%\n• Designed backend APIs for resource allocation system\n• Participated in daily stand-ups and contributed to project planning",
-    skills: ["React", "JavaScript", "HTML", "CSS", "Node.js"],
+    img: dicLogo,
+    role: "Web Developer & Security Intern",
+    company: "District Industries Centre (DIC), Patiala",
+    date: "Present",
+    desc: "• Auditing official government web portals to identify and remediate functional bugs and security vulnerabilities\n• Enhancing website performance, accessibility, and responsiveness across government web platforms\n• Collaborating with technical teams to uphold web standards and deliver seamless digital public services",
+    skills: ["Web Security", "Bug Hunting", "JavaScript", "HTML/CSS", "Web Development", "UI/UX Audit"],
   },
   {
     id: 1,
@@ -212,6 +213,17 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "ThaparFind - Student Utility & Lost & Found Hub",
+    date: "Jun 2026 - Present",
+    description: "AI-powered college platform featuring smart Lost & Found item matching, ReLoop student marketplace, and Travel Groups coordination with real-time notifications.",
+    image: thaparfindLogo,
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.IO", "Tailwind CSS"],
+    category: "web app",
+    github: "https://github.com/yadavaman2109/ThaparFind",
+    webapp: "https://thaparfind.vercel.app",
+  },
+  {
+    id: 1,
     title: "Real-Time Music Recommendation System Using Facial Expressions",
     date: "Recent",
     description: "Built a real-time system to detect user emotions via webcam. Detected emotions like happy, sad, angry using deep learning and recommended songs based on detected emotions.",
@@ -222,7 +234,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 1,
+    id: 2,
     title: "Blood Bank Management System",
     date: "Recent",
     description: "Implemented normalization and relational schema. Performed CRUD operations using SQL. Designed ER diagrams and maintained data integrity.",
@@ -233,7 +245,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "Cab On Campus (COC)",
     date: "Recent",
     description: "Designed a cab booking system with intuitive user interface. Focused on usability and smooth user experience. Built scalable design for future features.",
