@@ -5,7 +5,7 @@ import carrerLogo from '../images/carrer360.jpg';
 import musicLogo from '../images/MusicP.png';
 import cocLogo from '../images/coc.png';
 import bbmsLogo from '../images/bbms.png';
-import thaparfindLogo from '../images/thaparfind.png';
+import thaparfindLogo from '../images/thaparfind.jpg';
 import dicLogo from '../images/dic_patiala.png';
 
 export const Bio = {
