@@ -19,7 +19,7 @@ export const Bio = {
     "I'm a passionate Full Stack Developer and UI/UX Designer who loves crafting dynamic, visually stunning web experiences. I constantly seek out new challenges to creatively solve problems and deliver high-quality digital solutions.",
   github: "https://github.com/yadavaman2109",
   resume:
-    "https://drive.google.com/file/d/1jbQ9x8MkvNgoOtDocC6qngvcwEXTV6rG/view?usp=drivesdk",
+    "https://drive.google.com/file/d/1BpiHpx5ukkGbJUR22QLRDVOQZ41Hc6Tm/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/aman-yadav-8684242b3?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   twitter: "",
   insta: "",
