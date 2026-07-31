@@ -7,6 +7,7 @@ import cocLogo from '../images/coc.png';
 import bbmsLogo from '../images/bbms.png';
 import thaparfindLogo from '../images/thaparfind.jpg';
 import dicLogo from '../images/dic_patiala.png';
+import exptrackLogo from '../images/exptrack.png';
 
 export const Bio = {
   name: "Aman Yadav",
@@ -224,6 +225,17 @@ export const projects = [
   },
   {
     id: 1,
+    title: "ExpTrack - Expense & Financial Tracker",
+    date: "Apr 2026 - Present",
+    description: "Full-stack financial management app for tracking daily expenses, visualizing monthly spending analytics, setting budget goals, and categorizing transactions.",
+    image: exptrackLogo,
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Vercel"],
+    category: "web app",
+    github: "https://github.com/yadavaman2109/ExpTrack",
+    webapp: "https://exp-track-murex.vercel.app",
+  },
+  {
+    id: 2,
     title: "Real-Time Music Recommendation System Using Facial Expressions",
     date: "Recent",
     description: "Built a real-time system to detect user emotions via webcam. Detected emotions like happy, sad, angry using deep learning and recommended songs based on detected emotions.",
@@ -234,7 +246,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 2,
+    id: 3,
     title: "Blood Bank Management System",
     date: "Recent",
     description: "Implemented normalization and relational schema. Performed CRUD operations using SQL. Designed ER diagrams and maintained data integrity.",
@@ -245,7 +257,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 3,
+    id: 4,
     title: "Cab On Campus (COC)",
     date: "Recent",
     description: "Designed a cab booking system with intuitive user interface. Focused on usability and smooth user experience. Built scalable design for future features.",
